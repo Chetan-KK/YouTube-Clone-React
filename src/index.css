@@ -10,6 +10,8 @@
   --selected-option-bg: rgb(27, 27, 27);
   --selected-option-text: rgb(255, 255, 255);
   --small-title: 14px;
+  --small-text: 12px;
+  --dim-text-color: rgb(150, 150, 150);
   --ff: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 ::-webkit-scrollbar {

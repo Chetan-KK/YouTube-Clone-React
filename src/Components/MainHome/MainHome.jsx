@@ -7,8 +7,26 @@ export default function MainHome() {
   return (
     <div className="MainHome">
       <SlideBar />
-      <div className="optionResults">
-        <VideoCard />
+      <div className="optionResults flex">
+        <VideoCard title="hiddsfldfkj" thumbnail="sjdfis" channelTitle="this" />
+        <VideoCard title="hiddsfldfkj" thumbnail="sjdfis" channelTitle="this" />
+        <VideoCard title="hiddsfldfkj" thumbnail="sjdfis" channelTitle="this" />
+        <VideoCard title="hiddsfldfkj" thumbnail="sjdfis" channelTitle="this" />
+        <VideoCard title="hiddsfldfkj" thumbnail="sjdfis" channelTitle="this" />
+        <VideoCard title="hiddsfldfkj" thumbnail="sjdfis" channelTitle="this" />
+        <VideoCard title="hiddsfldfkj" thumbnail="sjdfis" channelTitle="this" />
+        <VideoCard title="hiddsfldfkj" thumbnail="sjdfis" channelTitle="this" />
+        <VideoCard title="hiddsfldfkj" thumbnail="sjdfis" channelTitle="this" />
+        <VideoCard title="hiddsfldfkj" thumbnail="sjdfis" channelTitle="this" />
+        <VideoCard title="hiddsfldfkj" thumbnail="sjdfis" channelTitle="this" />
+        <VideoCard title="hiddsfldfkj" thumbnail="sjdfis" channelTitle="this" />
+        <VideoCard title="hiddsfldfkj" thumbnail="sjdfis" channelTitle="this" />
+        <VideoCard title="hiddsfldfkj" thumbnail="sjdfis" channelTitle="this" />
+        <VideoCard title="hiddsfldfkj" thumbnail="sjdfis" channelTitle="this" />
+        <VideoCard title="hiddsfldfkj" thumbnail="sjdfis" channelTitle="this" />
+        <VideoCard title="hiddsfldfkj" thumbnail="sjdfis" channelTitle="this" />
+        <VideoCard title="hiddsfldfkj" thumbnail="sjdfis" channelTitle="this" />
+        <VideoCard title="hiddsfldfkj" thumbnail="sjdfis" channelTitle="this" />
       </div>
     </div>
   );

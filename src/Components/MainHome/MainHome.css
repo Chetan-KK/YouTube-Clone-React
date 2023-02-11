@@ -1,3 +1,10 @@
 .MainHome {
-  padding: 10px;
+  flex-direction: column;
+}
+.MainHome .optionResults {
+  align-items: flex-start !important;
+  flex-wrap: wrap;
+  overflow: hidden;
+  overflow-y: scroll;
+  height: 83.4vh;
 }

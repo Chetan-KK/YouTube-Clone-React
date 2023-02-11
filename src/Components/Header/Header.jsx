@@ -9,7 +9,7 @@ import notificationIcon from "/icons/notification.svg";
 import YouTubeLogo from "/YouTubeLogo.png";
 import userIcon from "/userIcon.jpg";
 
-import { useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 export default function Header() {
   const [clearBut, setclearBut] = useState(false);
@@ -37,7 +37,9 @@ export default function Header() {
           className="normal_icon normal_icon_menuIcon"
           alt=""
         />
-        <img className="header__mainLogo" src={YouTubeLogo} alt="" />
+        <NavLink to="/">
+          <img className="header__mainLogo" src={YouTubeLogo} alt="" />
+        </NavLink>
       </div>
       <form className="flex header__form" onSubmit={handleSearchSubmit}>
         <input
