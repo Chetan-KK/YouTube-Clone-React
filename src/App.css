@@ -1,0 +1,6 @@
+.main__section {
+  align-items: flex-start !important;
+}
+.main__section > * {
+  flex: 0.85;
+}

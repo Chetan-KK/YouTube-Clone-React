@@ -1,0 +1,10 @@
+.ResultsPage {
+  flex-direction: column;
+}
+.ResultsPage .results {
+  align-items: flex-start !important;
+  flex-wrap: wrap;
+  overflow: hidden;
+  overflow-y: scroll;
+  height: 83.4vh;
+}

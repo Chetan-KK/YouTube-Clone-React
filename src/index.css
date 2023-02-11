@@ -1,0 +1,50 @@
+:root {
+  --primary-color: #ffffff;
+  --primary-text-color: white;
+  --icon-hover-color: rgb(233, 233, 233);
+  --border-color: rgb(196, 196, 196);
+  --button-color: rgb(230, 230, 230);
+  --button-hover-color: rgb(216, 216, 216);
+  --input-outline: rgb(78, 78, 255);
+  --text-color: black;
+  --selected-option-bg: rgb(27, 27, 27);
+  --selected-option-text: rgb(255, 255, 255);
+  --small-title: 14px;
+  --ff: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+::-webkit-scrollbar {
+  background-color: #ffffff;
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--border-color);
+  border-radius: 10px;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--ff);
+}
+input:focus {
+  outline: none;
+  box-shadow: inset 0 0 1px 1px var(--input-outline);
+}
+body {
+  overflow-y: hidden;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.normal_icon {
+  padding: 10px;
+  border-radius: 50vw;
+  height: 40px;
+  cursor: pointer;
+}
+.normal_icon:hover {
+  background-color: var(--icon-hover-color);
+}
