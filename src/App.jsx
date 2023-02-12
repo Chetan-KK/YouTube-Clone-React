@@ -14,7 +14,7 @@ function App() {
 
   const fetchAPI = async () => {
     // const fetchedData = await fetch(
-    //   "https://www.googleapis.com/youtube/v3/search?part=snippet&key=AIzaSyBoeHA85SvdflIGhBNqNJLoEjg6bYZPJsE&type=video&q=javascript&maxResults=10"
+    //   "https://www.googleapis.com/youtube/v3/search?part=snippet&key=${import.meta.env.VITE_API_KEY}&type=video&q=javascript&maxResults=10"
     // );
     // const convertedData = await fetchedData.json();
     // setData(convertedData);
@@ -25,11 +25,16 @@ function App() {
 
   const [loaded, setLoaded] = useState(false);
 
+  const [menuToggle, setMenuToggle] = useState(true);
+
+  function handleMenu() {
+    setMenuToggle(!menuToggle);
+  }
   return (
     <div className="App">
-      <Header />
-      <section className="main__section flex">
-        <Sidebar />
+      <Header handleMenu={handleMenu} />
+      <section className="main__section">
+        <Sidebar status={menuToggle} />
         <Routes>
           <Route path="/" element={<MainHome />} />
           <Route path="/Home/:id" element={<HomeResultsPage />} />

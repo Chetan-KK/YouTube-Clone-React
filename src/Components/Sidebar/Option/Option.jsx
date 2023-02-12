@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import "./Option.css";
 import { NavLink } from "react-router-dom";
 
 function Option(prop) {

@@ -2,9 +2,14 @@
   flex-direction: column;
 }
 .ResultsPage .results {
-  align-items: flex-start !important;
-  flex-wrap: wrap;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fill, 300px);
+  grid-template-rows: repeat(auto-fill, 280px);
+  align-items: start;
+  justify-content: center;
+  gap: 0.5vw;
   overflow: hidden;
   overflow-y: scroll;
-  height: 83.4vh;
+  height: 100%;
 }

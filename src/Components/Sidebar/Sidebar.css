@@ -1,15 +1,60 @@
 .Sidebar {
-  flex: 0.15;
-  /* width: 15rem; */
   height: 91vh;
   overflow: hidden;
   overflow-y: scroll;
   padding: 10px;
 }
-.sidebar__section {
+
+/* sidebar open */
+.SidebarOpen .sidebar__section {
   border-bottom: 1px solid var(--button-color);
   padding: 5px;
 }
-.option__active {
+.SidebarOpen .option__active {
+  background-color: var(--button-color);
+}
+.SidebarOpen .sidebar__section .Option {
+  margin: 5px 0;
+  font-size: var(--small-title);
+  gap: 10px;
+  border-radius: 10px;
+  padding: 8px 10px;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--text-color);
+}
+.SidebarOpen .sidebar__section .Option:hover {
+  background-color: var(--button-color);
+}
+.SidebarOpen .sidebar__section .Option .icon {
+  height: 22px;
+}
+.SidebarOpen .active_sidebar_link {
+  background-color: var(--button-color);
+}
+
+/* sidebar close*/
+.SidebarClose {
+}
+.SidebarClose .option__active {
+  background-color: var(--button-color);
+}
+.SidebarClose .Option {
+  margin: 10px 0;
+  font-size: var(--small-text);
+  border-radius: 10px;
+  flex-direction: column;
+  padding: 8px 10px;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--dim-text-color);
+}
+.SidebarClose .Option:hover {
+  background-color: var(--button-color);
+}
+.SidebarClose .Option .icon {
+  height: 22px;
+}
+.SidebarClose .active_sidebar_link {
   background-color: var(--button-color);
 }

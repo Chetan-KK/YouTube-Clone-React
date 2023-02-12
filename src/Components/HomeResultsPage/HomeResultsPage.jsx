@@ -12,34 +12,7 @@ function HomeResultsPage() {
         thumbnails: { high: { url: "img" } },
         title: "tit",
         channelTitle: "chtit",
-      },
-    },
-    {
-      snippet: {
-        thumbnails: { high: { url: "img" } },
-        title: "tit",
-        channelTitle: "chtit",
-      },
-    },
-    {
-      snippet: {
-        thumbnails: { high: { url: "img" } },
-        title: "tit",
-        channelTitle: "chtit",
-      },
-    },
-    {
-      snippet: {
-        thumbnails: { high: { url: "img" } },
-        title: "tit",
-        channelTitle: "chtit",
-      },
-    },
-    {
-      snippet: {
-        thumbnails: { high: { url: "img" } },
-        title: "tit",
-        channelTitle: "chtit",
+        publishTime: "2021-10-09T03:30:03Z",
       },
     },
   ]);
@@ -71,6 +44,7 @@ function HomeResultsPage() {
               thumbnail={video.snippet.thumbnails.high.url}
               title={video.snippet.title}
               channelTitle={video.snippet.channelTitle}
+              publishTime={video.snippet.publishTime}
             />
           ))}
       </div>

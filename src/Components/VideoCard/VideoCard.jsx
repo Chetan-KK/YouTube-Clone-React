@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./VideoCard.css";
 import TimeAgo from "javascript-time-ago";
 import en from "javascript-time-ago/locale/en";
@@ -9,6 +9,14 @@ function VideoCard(props) {
   //format time in years and months format
   const timeAgo = new TimeAgo("en-US");
   const publishDate = timeAgo.format(new Date(props.publishTime));
+
+  useEffect(() => {
+    getVideoInfo();
+  }, []);
+
+  const getVideoInfo = async () => {
+    // const fetchedData = await fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&key=${import.meta.env.VITE_API_KEY}&chart=mostPopular&regionCode=IN&type=video&maxResults=10`)
+  };
 
   return (
     <div className="Video">

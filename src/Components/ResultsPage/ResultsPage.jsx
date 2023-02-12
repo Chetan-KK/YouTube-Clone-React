@@ -17,7 +17,7 @@ function ResultsPage() {
 
   const getResult = async () => {
     // const fetchedData = await fetch(
-    //   // `https://www.googleapis.com/youtube/v3/search?part=snippet&key=AIzaSyBoeHA85SvdflIGhBNqNJLoEjg6bYZPJsE&type=video&q=${id}&maxResults=10`
+    //   // `https://www.googleapis.com/youtube/v3/search?part=snippet&key=${import.meta.env.VITE_API_KEY}&type=video&q=${id}&maxResults=10`
     //   ytdata
     // );
     // const convertedData = await fetchedData.json();

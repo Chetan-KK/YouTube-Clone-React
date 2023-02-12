@@ -11,7 +11,7 @@ import userIcon from "/userIcon.jpg";
 
 import { NavLink, useNavigate } from "react-router-dom";
 
-export default function Header() {
+export default function Header(props) {
   const [clearBut, setclearBut] = useState(false);
   const [search, setSearch] = useState("");
   const navigate = useNavigate();
@@ -36,6 +36,7 @@ export default function Header() {
           src={menuIcon}
           className="normal_icon normal_icon_menuIcon"
           alt=""
+          onClick={props.handleMenu}
         />
         <NavLink to="/">
           <img className="header__mainLogo" src={YouTubeLogo} alt="" />
