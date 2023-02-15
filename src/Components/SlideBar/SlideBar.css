@@ -2,11 +2,15 @@
   padding: 10px;
   gap: 10px;
   font-size: var(--small-title);
+  width: 100%;
+  overflow: hidden;
+  overflow-x: scroll;
 }
 
 .SlideBar .slideBar__option {
   color: var(--text-color);
   border-radius: 5px;
+  width: max-content;
   font-weight: 500;
   text-decoration: none;
   background-color: var(--button-color);

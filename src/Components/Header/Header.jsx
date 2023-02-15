@@ -26,7 +26,7 @@ export default function Header(props) {
   }
   const handleSearchSubmit = (e) => {
     e.preventDefault();
-    navigate(`/${e.target[0].value}`);
+    navigate(`/search/${e.target[0].value}`);
   };
 
   return (

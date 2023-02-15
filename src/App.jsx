@@ -6,6 +6,7 @@ import MainHome from "./Components/MainHome/MainHome";
 import { Route, Routes } from "react-router-dom";
 import ResultsPage from "./Components/ResultsPage/ResultsPage";
 import HomeResultsPage from "./Components/HomeResultsPage/HomeResultsPage";
+import SearchResults from "./Components/SearchResults/SearchResults";
 
 function App() {
   useEffect(() => {
@@ -39,6 +40,7 @@ function App() {
           <Route path="/" element={<MainHome />} />
           <Route path="/Home/:id" element={<HomeResultsPage />} />
           <Route path="/:id" element={<ResultsPage />} />
+          <Route path="/search/:id" element={<SearchResults />} />
         </Routes>
       </section>
     </div>

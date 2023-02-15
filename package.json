@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "deploy": "vercel --prod",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -15,7 +16,9 @@
     "javascript-time-ago": "^2.5.9",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.8.1"
+    "react-infinite-scroll-component": "^6.1.0",
+    "react-router-dom": "^6.8.1",
+    "vercel": "^28.15.5"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",
